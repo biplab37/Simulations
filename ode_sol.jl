@@ -5,3 +5,9 @@ function next_step_rk4!(x, F, t, h, p)
     k4 = F(x .+ h * k3, p,  t + h)
     x .+= h * (k1 .+ 2 * k2 .+ 2 * k3 .+ k4) / 6
 end
+
+# velocity verlet method
+function next_step_velocity_verlet!(x, F, t, h, p)
+
+
+end
